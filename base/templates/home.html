@@ -1,0 +1,15 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<h1>Inicio</h1>
+
+{% for p in posts %}
+
+<h2> {{p.title}} </h2>
+<p> {{p.text}} </p>
+<a href="/post/{{p.id}}">Editar</a>
+
+{% endfor %}
+
+{% endblock %}
